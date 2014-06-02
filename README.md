@@ -1,5 +1,5 @@
-Backbone Web App built with the Yeoman Workflow
-===============================================
+Yeoman Backbone Web App
+=======================
 
 ### Grunt usage (server starting)
 
@@ -7,7 +7,7 @@ Backbone Web App built with the Yeoman Workflow
 grunt serve
 ```
 
-### Yeoman generation workflow
+### Yeoman workflow
 
 ```
 yo backbone

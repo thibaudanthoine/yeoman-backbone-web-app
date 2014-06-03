@@ -5,17 +5,11 @@ BookmarkBackbone.Views = BookmarkBackbone.Views || {};
 (function () {
     'use strict';
     BookmarkBackbone.Views.BookmarkNewView = Backbone.View.extend({
-
         el: '#app',
-
         template: JST['app/scripts/templates/BookmarkNewView.ejs'],
-
         tagName: 'div',
-
         id: '',
-
         className: '',
-
         events: {
             'click button.save': 'save'
         },
@@ -38,7 +32,7 @@ BookmarkBackbone.Views = BookmarkBackbone.Views || {};
                 description: this.$el.find('textarea[name=description]').val()
             });
 
-            if (this.bookmark.isValid()){
+            if (this.bookmark.isValid()) {
                 this.bookmarks.add(this.bookmark);
                 this.bookmark.save();
                 window.location.hash = 'bookmarks/index';
@@ -49,6 +43,5 @@ BookmarkBackbone.Views = BookmarkBackbone.Views || {};
             this.$el.html(this.template(this.bookmark.toJSON()));
             return this;
         }
-
     });
 })();

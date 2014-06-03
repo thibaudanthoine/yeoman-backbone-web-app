@@ -5,17 +5,11 @@ BookmarkBackbone.Views = BookmarkBackbone.Views || {};
 (function () {
     'use strict';
     BookmarkBackbone.Views.BookmarkIndexView = Backbone.View.extend({
-
         el: '#app',
-
         template: JST['app/scripts/templates/BookmarkIndexView.ejs'],
-
         tagName: '',
-
         id: '',
-
         className: '',
-
         events: {},
 
         initialize: function (options) {
@@ -43,6 +37,5 @@ BookmarkBackbone.Views = BookmarkBackbone.Views || {};
             this.addAll();
             return this;
         }
-
     });
 })();

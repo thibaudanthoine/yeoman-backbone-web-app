@@ -4,19 +4,12 @@ BookmarkBackbone.Views = BookmarkBackbone.Views || {};
 
 (function () {
     'use strict';
-
     BookmarkBackbone.Views.BookmarkEditView = Backbone.View.extend({
-
         el: '#app',
-
         template: JST['app/scripts/templates/BookmarkEditView.ejs'],
-
         tagName: 'div',
-
         id: '',
-
         className: '',
-
         events: {
             'click button.save': 'update'
         },
@@ -46,7 +39,5 @@ BookmarkBackbone.Views = BookmarkBackbone.Views || {};
             this.$el.html(this.template(this.bookmark.toJSON()));
             return this;
         }
-
     });
-
 })();

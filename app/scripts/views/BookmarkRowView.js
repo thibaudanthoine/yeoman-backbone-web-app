@@ -5,15 +5,10 @@ BookmarkBackbone.Views = BookmarkBackbone.Views || {};
 (function () {
     'use strict';
     BookmarkBackbone.Views.BookmarkRowView = Backbone.View.extend({
-
         template: JST['app/scripts/templates/BookmarkRowView.ejs'],
-
         tagName: 'tr',
-
         id: '',
-
         className: '',
-
         events: {
             'click a.delete': 'destroy'
         },
@@ -35,6 +30,5 @@ BookmarkBackbone.Views = BookmarkBackbone.Views || {};
             this.$el.html(this.template(this.bookmark.toJSON()));
             return this;
         }
-        
     });
 })();
